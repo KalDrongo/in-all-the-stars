@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>4 u my love!!! :3</title>
+    <link rel="stylesheet" href="stylee-wily.css">
+  </head>
+  <body>
+    <canvas id="starfield"></canvas>
+    <script src="scripty-bipty.js"></script>
+  </body>
+</html>
+<!--Credits: This was made in part thanks to these helpful sources
+https://thenewcode.com/81/Make-A-Starfield-Background-with-HTML5-Canvas
+-->

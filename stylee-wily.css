@@ -1,0 +1,13 @@
+/*this CSS makes it so the canvas won't have a border
+so it can neatly fill up the whole screen */
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+canvas {
+    width: 100%;
+    height: auto;
+    background: #111;
+}
