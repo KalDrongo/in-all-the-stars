@@ -1,4 +1,3 @@
-
 //sets canvas variable and makes it take up whole screen
 var canvas = document.getElementById("starfield")
 canvas.width  = window.innerWidth;
@@ -24,19 +23,19 @@ context.fillStyle = "hsl(" + hue + ", " + sat + "%, 88%)";
 context.fill();
 }
 
-
-
-//makes elements fade in
-function fadeIn(){
-    
+function init() {
+    window.requestAnimationFrame(draw);
 }
 
-var words = canvas.getContext("2d");
-words.font = "30px Comic Sans MS";
-for (let i = 0; i < 10; i++) {
-    //fillStyle uses the last value for opacity (from 0.1 to 1)
-    words.fillStyle = `rgba(45, 45, 255, ${(i + 1) / 10})`;
+function draw() {
+
+    var words = canvas.getContext("2d");
+    words.font = "30px Comic Sans MS";
+    words.fillStyle = `rgba(45, 45, 255, 0.02)`;
     words.textAlign = `center`;
     words.fillText("Hello World", canvas.width/2, canvas.height/2);
-    wait(1)
+    
+    window.requestAnimationFrame(draw);
 }
+
+init ();
