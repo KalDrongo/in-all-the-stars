@@ -6,12 +6,12 @@ canvas.height = window.innerHeight;
 //draws pretty stars for the background!
 function getRandom(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
-}           
-    var canvas = document.getElementById("starfield"),
-    context = canvas.getContext("2d"),
-    stars = 500,
-    colorrange = [0,60,240];
-    for (var i = 0; i < stars; i++) {
+}
+var canvas = document.getElementById("starfield"),
+context = canvas.getContext("2d"),
+stars = 500,
+colorrange = [0,60,240];
+for (var i = 0; i < stars; i++) {
     var x = Math.random() * canvas.offsetWidth;
     y = Math.random() * canvas.offsetHeight,
     radius = Math.random() * 1.2,
